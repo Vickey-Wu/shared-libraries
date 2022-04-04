@@ -13,8 +13,8 @@ def call() {
             stage('read json') {
                 steps{
                     script{
-                        def mm = new org.devops.mergeyaml()
-                        mm.MergeYamlFileFunc()
+                        def mm = new org.devops.myf()
+                        mm.MergeDeploymentYaml()
                         // env.GIT_REPO_NAME = "vickey-web"
                         // env.IS_EXECUSE_TEST = "yes"
                         // def ms = new org.devops.metersphere()
